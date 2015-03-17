@@ -1129,7 +1129,7 @@
 					SecondsAgo = "Hace {0} segundos",
 					MinuteAgo =  "Hace {0} minuto",
 					MinutesAgo = "Hace {0} minutos",
-					HourAgo =    "Hace {0} día",
+					HourAgo =    "Hace {0} hora",
 					HoursAgo =   "Hace {0} horas",
 					DayAgo =     "Hace {0} día",
 					DaysAgo =    "Hace {0} días",
