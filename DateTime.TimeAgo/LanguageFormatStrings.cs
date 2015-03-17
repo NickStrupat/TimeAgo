@@ -2,6 +2,8 @@
 
 namespace TimeAgo {
 	internal static class LanguageFormatStrings {
+		internal class VerifiedByNativeSpeakerAttribute : Attribute { }
+
 		private static DateTimeFormatStrings? afrikaans;
 		public static DateTimeFormatStrings Afrikaans {
 			get {
@@ -1124,7 +1126,7 @@ namespace TimeAgo {
 			}
 		}
 		private static DateTimeFormatStrings? spanish;
-        [Verified]
+        [VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings Spanish {
 			get {
 				return spanish ?? (spanish = new DateTimeFormatStrings {
@@ -1372,6 +1374,4 @@ namespace TimeAgo {
 			}
 		}
 	}
-
-    internal class VerifiedAttribute : Attribute {}
 }
