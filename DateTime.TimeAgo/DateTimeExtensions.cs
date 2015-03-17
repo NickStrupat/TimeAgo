@@ -2,21 +2,6 @@
 using System.Globalization;
 
 namespace TimeAgo {
-	internal struct DateTimeFormatStrings {
-		public String SecondAgo;
-		public String SecondsAgo;
-		public String MinuteAgo;
-		public String MinutesAgo;
-		public String HourAgo;
-		public String HoursAgo;
-		public String DayAgo;
-		public String DaysAgo;
-		public String MonthAgo;
-		public String MonthsAgo;
-		public String YearAgo;
-		public String YearsAgo;
-	}
-
 	public static class DateTimeExtensions {
 		public static String GetTimeAgo(this DateTime dateTime) {
 			return dateTime.GetTimeAgo(CultureInfo.CurrentUICulture);
@@ -24,7 +9,7 @@ namespace TimeAgo {
 
 		public static String GetTimeAgo(this DateTime dateTime, CultureInfo cultureInfo) {
 			if (cultureInfo == null)
-				throw new ArgumentNullException("cultureInfo");
+				throw new ArgumentNullException(Name.Of(cultureInfo));
 			var timeSpan = DateTime.Now - dateTime;
 			var dateTimeFormatStrings = GetFormatString(cultureInfo);
 			if (timeSpan.Days > 365) {
