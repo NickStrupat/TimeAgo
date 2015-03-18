@@ -3,6 +3,10 @@ Get a string showing how long ago a DateTime was, for example '4 minutes ago' in
 
 NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 
+    var dateTime = ...some time in the past...
+    var timeAgoInCurrentCulture = dateTime.TimeAgo();
+    var timeAgoInSpecificCulture = dateTime.TimeAgo(specificCultureInfo);
+
 ## Formats supported
 
 - 1 second ago
