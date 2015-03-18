@@ -3,11 +3,11 @@ using System.Globalization;
 
 namespace TimeAgo {
 	public static class DateTimeExtensions {
-		public static String GetTimeAgo(this DateTime dateTime) {
-			return dateTime.GetTimeAgo(CultureInfo.CurrentUICulture);
+		public static String TimeAgo(this DateTime dateTime) {
+			return dateTime.TimeAgo(CultureInfo.CurrentUICulture);
 		}
 
-		public static String GetTimeAgo(this DateTime dateTime, CultureInfo cultureInfo) {
+		public static String TimeAgo(this DateTime dateTime, CultureInfo cultureInfo) {
 			if (cultureInfo == null)
 				throw new ArgumentNullException(Name.Of(cultureInfo));
 			var timeSpan = DateTime.Now - dateTime;
@@ -37,7 +37,7 @@ namespace TimeAgo {
 			throw new NotSupportedException("The DateTime object does not have a supported value.");
 		}
 
-		private static DateTimeFormatStrings GetFormatString(CultureInfo cultureInfo) {
+		internal static DateTimeFormatStrings GetFormatString(CultureInfo cultureInfo) {
 			switch (cultureInfo.ThreeLetterISOLanguageName) {
 				case "afr": // Afrikaans
 					return LanguageFormatStrings.Afrikaans;

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DateTime.TimeAgo")]
+[assembly: AssemblyTitle("TimeAgo.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DateTime.TimeAgo")]
+[assembly: AssemblyProduct("TimeAgo.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("034bd876-436f-4be3-b869-c76d81472b0d")]
+[assembly: Guid("6dc253d7-2aa3-497d-827a-8418bd493a6d")]
 
 // Version information for an assembly consists of the following four values:
 //
