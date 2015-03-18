@@ -365,6 +365,7 @@ namespace TimeAgo {
 				}).GetValueOrDefault();
 			}
 		}
+        [VerifiedByNativeSpeaker]
 		private static DateTimeFormatStrings? french;
 		public static DateTimeFormatStrings French {
 			get {
