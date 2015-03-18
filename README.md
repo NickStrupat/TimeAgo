@@ -5,89 +5,89 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 
 ## Formats supported
 
-1 second ago
-5 seconds ago
-1 minute ago
-5 minutes ago
-1 hour ago
-5 hours ago
-1 day ago
-5 days ago
-1 month ago
-5 months ago
-1 year ago
-5 years ago
+- 1 second ago
+- 5 seconds ago
+- 1 minute ago
+- 5 minutes ago
+- 1 hour ago
+- 5 hours ago
+- 1 day ago
+- 5 days ago
+- 1 month ago
+- 5 months ago
+- 1 year ago
+- 5 years ago
 
-## Languages supported
+## Languages supported (73)
 
-Afrikaans
-Albanian
-Arabic
-Armenian
-Azerbaijani
-Basque
-Belarusian
-Bosnian
-Bulgarian
-Catalan
-Chinese
-Croatian
-Czech
-Danish
-Dutch
-English
-Estonian
-Filipino
-Finnish
-French
-Galician
-Georgian
-German
-Greek
-Gujarati
-Hebrew
-Hindi
-Hungarian
-Icelandic
-Igbo
-Indonesian
-Irish
-Italian
-Japanese
-Kannada
-Kazakh
-Khmer
-Korean
-Lao
-Latvian
-Lithuanian
-Macedonian
-Malagasy
-Malayalam
-Maltese
-Maori
-Marathi
-Mongolian
-Norwegian
-Persian
-Polish
-Portuguese
-Romanian
-Russian
-Serbian
-Serbian
-Slovak
-Slovenian
-Spanish
-Swedish
-Tajik
-Tamil
-Telugu
-Thai
-Turkish
-Ukrainian
-Urdu
-Uzbek
-Vietnamese
-Welsh
-Yoruba
+- Afrikaans
+- Albanian
+- Arabic
+- Armenian
+- Azerbaijani
+- Basque
+- Belarusian
+- Bosnian
+- Bulgarian
+- Catalan
+- Chinese
+- Croatian
+- Czech
+- Danish
+- Dutch
+- English
+- Estonian
+- Filipino
+- Finnish
+- French
+- Galician
+- Georgian
+- German
+- Greek
+- Gujarati
+- Hebrew
+- Hindi
+- Hungarian
+- Icelandic
+- Igbo
+- Indonesian
+- Irish
+- Italian
+- Japanese
+- Kannada
+- Kazakh
+- Khmer
+- Korean
+- Lao
+- Latvian
+- Lithuanian
+- Macedonian
+- Malagasy
+- Malayalam
+- Maltese
+- Maori
+- Marathi
+- Mongolian
+- Norwegian
+- Persian
+- Polish
+- Portuguese
+- Romanian
+- Russian
+- Serbian
+- Serbian
+- Slovak
+- Slovenian
+- Spanish
+- Swedish
+- Tajik
+- Tamil
+- Telugu
+- Thai
+- Turkish
+- Ukrainian
+- Urdu
+- Uzbek
+- Vietnamese
+- Welsh
+- Yoruba
