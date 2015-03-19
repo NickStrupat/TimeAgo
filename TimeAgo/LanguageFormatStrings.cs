@@ -427,18 +427,18 @@ namespace TimeAgo {
 		public static DateTimeFormatStrings German {
 			get {
 				return german ?? (german = new DateTimeFormatStrings {
-					SecondAgo =  "vor {0} Sekunde",
-					SecondsAgo = "vor {0} Sekunden",
-					MinuteAgo =  "vor {0} minute",
-					MinutesAgo = "vor {0} Minuten",
-					HourAgo =    "vor {0} Stunde",
-					HoursAgo =   "vor {0} Stunden",
-					DayAgo =     "vor {0} Tag",
-					DaysAgo =    "vor {0} Tage",
-					MonthAgo =   "vor {0} Monat",
-					MonthsAgo =  "vor {0} Monaten",
-					YearAgo =    "vor {0} Jahr",
-					YearsAgo =   "vor {0} Jahren",
+					SecondAgo =  "Vor {0} Sekunde",
+					SecondsAgo = "Vor {0} Sekunden",
+					MinuteAgo =  "Vor {0} Minute",
+					MinutesAgo = "Vor {0} Minuten",
+					HourAgo =    "Vor {0} Stunde",
+					HoursAgo =   "Vor {0} Stunden",
+					DayAgo =     "Vor {0} Tag",
+					DaysAgo =    "Vor {0} Tage",
+					MonthAgo =   "Vor {0} Monat",
+					MonthsAgo =  "Vor {0} Monaten",
+					YearAgo =    "Vor {0} Jahr",
+					YearsAgo =   "Vor {0} Jahren",
 				}).GetValueOrDefault();
 			}
 		}
@@ -519,12 +519,13 @@ namespace TimeAgo {
 			}
 		}
 		private static DateTimeFormatStrings? hungarian;
+        [VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings Hungarian {
 			get {
 				return hungarian ?? (hungarian = new DateTimeFormatStrings {
-					SecondAgo =  "{0} másodperc",
+					SecondAgo =  "{0} másodperccel ezelőtt",
 					SecondsAgo = "{0} másodperccel ezelőtt",
-					MinuteAgo =  "{0} perc ezelőtt",
+					MinuteAgo =  "{0} perccel ezelőtt",
 					MinutesAgo = "{0} perccel ezelőtt",
 					HourAgo =    "{0} órával ezelőtt",
 					HoursAgo =   "{0} órával ezelőtt",
@@ -532,7 +533,7 @@ namespace TimeAgo {
 					DaysAgo =    "{0} nappal ezelőtt",
 					MonthAgo =   "{0} hónappal ezelőtt",
 					MonthsAgo =  "{0} hónappal ezelőtt",
-					YearAgo =    "{0} éve",
+					YearAgo =    "{0} évvel ezelőtt",
 					YearsAgo =   "{0} évvel ezelőtt",
 				}).GetValueOrDefault();
 			}
