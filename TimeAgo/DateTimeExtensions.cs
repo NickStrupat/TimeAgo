@@ -30,7 +30,7 @@ namespace TimeAgo {
 				return String.Format(timeSpan.Hours == 1 ? dateTimeFormatStrings.HourAgo : dateTimeFormatStrings.HoursAgo, timeSpan.Hours);
 			if (timeSpan.Minutes > 0)
 				return String.Format(timeSpan.Minutes == 1 ? dateTimeFormatStrings.MinuteAgo : dateTimeFormatStrings.MinutesAgo, timeSpan.Minutes);
-			if (timeSpan.Seconds > 1)
+			if (timeSpan.Seconds > 1 || timeSpan.Seconds == 0)
 				return String.Format(dateTimeFormatStrings.SecondsAgo, timeSpan.Seconds);
 			if (timeSpan.Seconds == 1)
 				return String.Format(dateTimeFormatStrings.SecondAgo, timeSpan.Seconds); ;

@@ -30,7 +30,7 @@ namespace TimeAgo.Tests {
 			var distinctSupportedLanguageCultures = supportedCultures.GroupBy(x => x.ThreeLetterISOLanguageName).Select(x => x.First()).ToList();
 			foreach (var culture in distinctSupportedLanguageCultures) {
 				foreach (var dateTimeFunc in dateTimeFuncs) {
-					for (var i = 1; i <= 5; i *= 5) {
+					for (var i = 0; i != 3; i++) {
 						var dateTime = DateTime.Now.Subtract(dateTimeFunc(i));
 						var timeAgo = dateTime.TimeAgo(culture);
 						Debug.WriteLine(timeAgo);
