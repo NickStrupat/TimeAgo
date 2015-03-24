@@ -12,15 +12,15 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 - 1 second ago
 - 5 seconds ago
 - 1 minute ago
-- 5 minutes ago
+- 24 minutes ago
 - 1 hour ago
-- 5 hours ago
+- 13 hours ago
 - 1 day ago
-- 5 days ago
+- 12 days ago
 - 1 month ago
-- 5 months ago
+- 6 months ago
 - 1 year ago
-- 5 years ago
+- 3 years ago
 
 ## Languages supported (73)
 
