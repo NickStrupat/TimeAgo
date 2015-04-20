@@ -195,6 +195,7 @@ namespace TimeAgo {
 			}
 		}
 		private static DateTimeFormatStrings? chinese;
+        [VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings Chinese {
 			get {
 				return chinese ?? (chinese = new DateTimeFormatStrings {
