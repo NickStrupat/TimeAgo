@@ -24,7 +24,7 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 
 ## Languages supported (73)
 
-### * indicates the translations have been Verified by a native speaker
+#### * indicates the translations have been verified by a native speaker
 
 - Afrikaans
 - Albanian
