@@ -291,6 +291,7 @@ namespace TimeAgo {
 			}
 		}
 		private static DateTimeFormatStrings? english;
+        [VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings English {
 			get {
 				return english ?? (english = new DateTimeFormatStrings {
