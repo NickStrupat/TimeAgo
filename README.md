@@ -24,8 +24,17 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 
 ## Languages supported (70)
 
-#### * indicates the translations have been verified by a native speaker
+#### Verified by a native speaker
 
+- Chinese
+- English
+- French
+- Hungarian
+- Serbian
+- Spanish
+
+#### Non-verified (will gladly take pull-requests for verified translations)
+ 
 - Afrikaans
 - Albanian
 - Arabic
@@ -36,16 +45,13 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 - Bosnian
 - Bulgarian
 - Catalan
-- Chinese *
 - Croatian
 - Czech
 - Danish
 - Dutch
-- English *
 - Estonian
 - Filipino
 - Finnish
-- French *
 - Galician
 - Georgian
 - German
@@ -53,7 +59,6 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 - Gujarati
 - Hebrew
 - Hindi
-- Hungarian *
 - Icelandic
 - Igbo
 - Indonesian
@@ -80,10 +85,8 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 - Portuguese
 - Romanian
 - Russian
-- Serbian *
 - Slovak
 - Slovenian
-- Spanish *
 - Swedish
 - Tajik
 - Tamil
