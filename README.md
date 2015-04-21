@@ -22,7 +22,7 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 - 1 year ago
 - 3 years ago
 
-## Languages supported (73)
+## Languages supported (70)
 
 #### * indicates the translations have been verified by a native speaker
 
