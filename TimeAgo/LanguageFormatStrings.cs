@@ -1073,21 +1073,22 @@ namespace TimeAgo {
 			}
 		}
 		private static DateTimeFormatStrings? serbian;
+		[VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings Serbian {
 			get {
 				return serbian ?? (serbian = new DateTimeFormatStrings {
-					SecondAgo =  "Аго {0} секунда",
-					SecondsAgo = "Aro {0} секунди",
-					MinuteAgo =  "Аго {0} минут",
-					MinutesAgo = "Аго {0} минута",
-					HourAgo =    "Аго {0} час",
-					HoursAgo =   "Aro {0} сати",
-					DayAgo =     "{0} дан од",
+					SecondAgo =  "Пре секунду",
+					SecondsAgo = "Пре {0} секунди",
+					MinuteAgo =  "Пре минут",
+					MinutesAgo = "Пре {0} минута",
+					HourAgo =    "Пре сат",
+					HoursAgo =   "Пре {0} сати",
+					DayAgo =     "Пре дан",
 					DaysAgo =    "Пре {0} дана",
-					MonthAgo =   "{0} монтх аго",
-					MonthsAgo =  "Aro {0} месеци",
-					YearAgo =    "{0} год назад",
-					YearsAgo =   "Аго {0} година",
+					MonthAgo =   "Пре месец",
+					MonthsAgo =  "Пре {0} месеци",
+					YearAgo =    "Пре годинy",
+					YearsAgo =   "Пре {0} година",
 				}).GetValueOrDefault();
 			}
 		}
