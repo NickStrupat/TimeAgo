@@ -80,8 +80,7 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 - Portuguese
 - Romanian
 - Russian
-- Serbian
-- Serbian
+- Serbian *
 - Slovak
 - Slovenian
 - Spanish *
