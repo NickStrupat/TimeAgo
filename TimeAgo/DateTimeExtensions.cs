@@ -33,7 +33,7 @@ namespace TimeAgo {
 			if (timeSpan.Seconds > 1 || timeSpan.Seconds == 0)
 				return String.Format(dateTimeFormatStrings.SecondsAgo, timeSpan.Seconds);
 			if (timeSpan.Seconds == 1)
-				return String.Format(dateTimeFormatStrings.SecondAgo, timeSpan.Seconds); ;
+				return String.Format(dateTimeFormatStrings.SecondAgo, timeSpan.Seconds);
 			throw new NotSupportedException("The DateTime object does not have a supported value.");
 		}
 
