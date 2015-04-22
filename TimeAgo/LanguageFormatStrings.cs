@@ -137,26 +137,28 @@ namespace TimeAgo {
 				}).GetValueOrDefault();
 			}
 		}
-		private static DateTimeFormatStrings? bosnian;
-        [VerifiedByNativeSpeaker]
+
+	    private static DateTimeFormatStrings? bosnian;
+		[VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings Bosnian {
 			get {
 				return bosnian ?? (bosnian = new DateTimeFormatStrings {
-                    SecondAgo =  "Prije sekundu",
-                    SecondsAgo = "Prije {0} sekundi",
-                    MinuteAgo =  "Prije minutu",
-                    MinutesAgo = "Prije {0} minuta",
-                    HourAgo =    "Prije sat",
-                    HoursAgo =   "Prije {0} sati",
-                    DayAgo =     "Prije dan",
-                    DaysAgo =    "Prije {0} dana",
-                    MonthAgo =   "Prije mjesec",
-                    MonthsAgo =  "Prije {0} mjeseci",
-                    YearAgo =    "Prije godinu",
-                    YearsAgo =   "Prije {0} godina",
+					SecondAgo = "Prije sekundu",
+					SecondsAgo = "Prije {0} sekundi",
+					MinuteAgo = "Prije minutu",
+					MinutesAgo = "Prije {0} minuta",
+					HourAgo = "Prije sat",
+					HoursAgo = "Prije {0} sati",
+					DayAgo = "Prije dan",
+					DaysAgo = "Prije {0} dana",
+					MonthAgo = "Prije mjesec",
+					MonthsAgo = "Prije {0} mjeseci",
+					YearAgo = "Prije godinu",
+					YearsAgo = "Prije {0} godina",
 				}).GetValueOrDefault();
 			}
 		}
+
 		private static DateTimeFormatStrings? bulgarian;
 		public static DateTimeFormatStrings Bulgarian {
 			get {
