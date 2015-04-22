@@ -26,6 +26,7 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 
 #### Verified by a native speaker
 
+- Bosnian
 - Chinese
 - English
 - French
@@ -42,7 +43,6 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 - Azerbaijani
 - Basque
 - Belarusian
-- Bosnian
 - Bulgarian
 - Catalan
 - Croatian
