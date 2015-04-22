@@ -138,7 +138,7 @@ namespace TimeAgo {
 			}
 		}
 
-	    private static DateTimeFormatStrings? bosnian;
+		private static DateTimeFormatStrings? bosnian;
 		[VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings Bosnian {
 			get {
