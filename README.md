@@ -33,7 +33,7 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 - Serbian
 - Spanish
 
-#### Non-verified (will gladly take pull-requests for verified translations)
+#### Unverified (will gladly take pull-requests for verified translations)
  
 - Afrikaans
 - Albanian
