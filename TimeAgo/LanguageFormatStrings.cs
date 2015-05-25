@@ -1154,14 +1154,19 @@ namespace TimeAgo {
 			}
 		}
 		private static DateTimeFormatStrings? swedish;
-		public static DateTimeFormatStrings Swedish {
+        [VerifiedByNativeSpeaker]
+        public static DateTimeFormatStrings Swedish {
 			get {
-				return swedish ?? (swedish = new DateTimeFormatStrings {
-					SecondAgo =  "{0} sekund sedan För",
-					SecondsAgo = "{0} sekunder sedan För",
+                // This can be written in objective form too
+                // example: "för {0} sekund sedan" translation in english would be "for {0} hour ago"
+                // You could also add the verbal form instead of numerical. 
+                // Which is "en sekund sedan" translation in english would be "one hour ago"
+                return swedish ?? (swedish = new DateTimeFormatStrings {
+					SecondAgo =  "{0} sekund sedan",
+					SecondsAgo = "{0} sekunder sedan",
 					MinuteAgo =  "{0} minut sedan",
 					MinutesAgo = "{0} minuter sedan",
-					HourAgo =    "{0} timme sedan För",
+					HourAgo =    "{0} timme sedan",
 					HoursAgo =   "{0} timmar sedan",
 					DayAgo =     "{0} dag sedan",
 					DaysAgo =    "{0} dagar sedan",
