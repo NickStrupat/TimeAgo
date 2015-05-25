@@ -27,7 +27,8 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 #### Verified by a native speaker
 
 - Bosnian
-- Chinese
+- Simplified Chinese
+- Traditional Chinese
 - English
 - French
 - Hungarian

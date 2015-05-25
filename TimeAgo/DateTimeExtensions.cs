@@ -69,7 +69,11 @@ namespace TimeAgo
                 case "ca": // Catalan
                     return LanguageFormatStrings.Catalan;
                 case "zh": // Chinese
-                    return LanguageFormatStrings.Chinese;
+                    if (cultureInfo.Name == "zh-Hant" || cultureInfo.Name == "zh-CHT" ||
+                        cultureInfo.Parent.Name == "zh-Hant" || cultureInfo.Parent.Name == "zh-CHT")
+                        return LanguageFormatStrings.TraditionalChinese;
+                    else
+                        return LanguageFormatStrings.SimplifiedChinese;
                 case "hr": // Croatian
                     return LanguageFormatStrings.Croatian;
                 case "cs": // Czech

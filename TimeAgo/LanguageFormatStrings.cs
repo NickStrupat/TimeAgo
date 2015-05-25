@@ -197,11 +197,11 @@ namespace TimeAgo {
 				});
 			}
 		}
-		private static DateTimeFormatStrings chinese;
+		private static DateTimeFormatStrings simplifiedChinese;
         [VerifiedByNativeSpeaker]
-		public static DateTimeFormatStrings Chinese {
+		public static DateTimeFormatStrings SimplifiedChinese {
 			get {
-				return chinese ?? (chinese = new DateTimeFormatStrings {
+				return simplifiedChinese ?? (simplifiedChinese = new DateTimeFormatStrings {
 					SecondAgo =  "{0} 秒前",
 					SecondsAgo = "{0} 秒前",
 					MinuteAgo =  "{0} 分钟前",
@@ -216,8 +216,31 @@ namespace TimeAgo {
 					YearsAgo =   "{0} 年前",
 				});
 			}
-		}
-		private static DateTimeFormatStrings croatian;
+        }
+        private static DateTimeFormatStrings traditionalChinese;
+        [VerifiedByNativeSpeaker]
+        public static DateTimeFormatStrings TraditionalChinese
+        {
+            get
+            {
+                return traditionalChinese ?? (traditionalChinese = new DateTimeFormatStrings
+                {
+                    SecondAgo = "{0} 秒前",
+                    SecondsAgo = "{0} 秒前",
+                    MinuteAgo = "{0} 分鐘前",
+                    MinutesAgo = "{0} 分鐘前",
+                    HourAgo = "{0} 小時前",
+                    HoursAgo = "{0} 小時前",
+                    DayAgo = "{0} 天前",
+                    DaysAgo = "{0} 天前",
+                    MonthAgo = "{0} 個月前",
+                    MonthsAgo = "{0} 個月前",
+                    YearAgo = "{0} 年前",
+                    YearsAgo = "{0} 年前",
+                });
+            }
+        }
+        private static DateTimeFormatStrings croatian;
 		public static DateTimeFormatStrings Croatian {
 			get {
 				return croatian ?? (croatian = new DateTimeFormatStrings {
