@@ -1,7 +1,7 @@
 using System;
 
 namespace TimeAgo {
-	internal struct DateTimeFormatStrings {
+	internal class DateTimeFormatStrings {
 		public String SecondAgo;
 		public String SecondsAgo;
 		public String MinuteAgo;
