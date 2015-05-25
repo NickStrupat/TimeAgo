@@ -12,10 +12,15 @@ namespace TimeAgo
 
         public static String TimeAgo(this DateTime dateTime, CultureInfo cultureInfo)
         {
+            return dateTime.TimeAgo(DateTime.Now, cultureInfo);
+        }
+
+        public static String TimeAgo(this DateTime dateTime, DateTime relativeTo, CultureInfo cultureInfo)
+        {
             if (cultureInfo == null)
                 throw new ArgumentNullException("cultureInfo");
 
-            var timeSpan = DateTime.Now - dateTime;
+            var timeSpan = relativeTo - dateTime;
             var dateTimeFormatStrings = GetFormatString(cultureInfo);
             if (timeSpan.Days > 365)
             {
