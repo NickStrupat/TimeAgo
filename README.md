@@ -34,6 +34,7 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 - Hungarian
 - Serbian
 - Spanish
+- Swedish
 
 #### Unverified (will gladly take pull-requests for verified translations)
  
@@ -88,7 +89,6 @@ NuGet package listed on nuget.org at https://www.nuget.org/packages/TimeAgo/
 - Russian
 - Slovak
 - Slovenian
-- Swedish
 - Tajik
 - Tamil
 - Telugu
