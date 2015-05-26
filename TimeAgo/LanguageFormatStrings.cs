@@ -4,7 +4,7 @@ namespace TimeAgo {
 	internal static class LanguageFormatStrings {
 		internal class VerifiedByNativeSpeakerAttribute : Attribute { }
 
-		private static DateTimeFormatStrings? afrikaans;
+		private static DateTimeFormatStrings afrikaans;
 		public static DateTimeFormatStrings Afrikaans {
 			get {
 				return afrikaans ?? (afrikaans = new DateTimeFormatStrings {
@@ -20,10 +20,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} maande gelede",
 					YearAgo =    "{0} jaar gelede",
 					YearsAgo =   "{0} jaar gelede",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? albanian;
+		private static DateTimeFormatStrings albanian;
 		public static DateTimeFormatStrings Albanian {
 			get {
 				return albanian ?? (albanian = new DateTimeFormatStrings {
@@ -39,10 +39,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} muaj më parë",
 					YearAgo =    "{0} vit më parë",
 					YearsAgo =   "{0} vjet më parë",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? arabic;
+		private static DateTimeFormatStrings arabic;
 		public static DateTimeFormatStrings Arabic {
 			get {
 				return arabic ?? (arabic = new DateTimeFormatStrings {
@@ -58,10 +58,10 @@ namespace TimeAgo {
 					MonthsAgo =  "قبل {0} أشهر",
 					YearAgo =    "{منذ سنة {0}",
 					YearsAgo =   "قبل {0} سنوات",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? armenian;
+		private static DateTimeFormatStrings armenian;
 		public static DateTimeFormatStrings Armenian {
 			get {
 				return armenian ?? (armenian = new DateTimeFormatStrings {
@@ -77,10 +77,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} ամիս առաջ",
 					YearAgo =    "{0} տարի առաջ",
 					YearsAgo =   "{0} տարի առաջ",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? azerbaijani;
+		private static DateTimeFormatStrings azerbaijani;
 		public static DateTimeFormatStrings Azerbaijani {
 			get {
 				return azerbaijani ?? (azerbaijani = new DateTimeFormatStrings {
@@ -96,10 +96,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} ay əvvəl",
 					YearAgo =    "{0} il əvvəl",
 					YearsAgo =   "{0} il əvvəl",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? basque;
+		private static DateTimeFormatStrings basque;
 		public static DateTimeFormatStrings Basque {
 			get {
 				return basque ?? (basque = new DateTimeFormatStrings {
@@ -115,10 +115,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Duela {0} hilabete",
 					YearAgo =    "Duela urte {0}",
 					YearsAgo =   "Duela {0} urte",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? belarusian;
+		private static DateTimeFormatStrings belarusian;
 		public static DateTimeFormatStrings Belarusian {
 			get {
 				return belarusian ?? (belarusian = new DateTimeFormatStrings {
@@ -134,11 +134,11 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} месяцаў таму",
 					YearAgo =    "{0} год таму",
 					YearsAgo =   "{0} гадоў таму",
-				}).GetValueOrDefault();
+				});
 			}
 		}
 
-		private static DateTimeFormatStrings? bosnian;
+		private static DateTimeFormatStrings bosnian;
 		[VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings Bosnian {
 			get {
@@ -155,11 +155,11 @@ namespace TimeAgo {
 					MonthsAgo =  "Prije {0} mjeseci",
 					YearAgo =    "Prije godinu",
 					YearsAgo =   "Prije {0} godina",
-				}).GetValueOrDefault();
+				});
 			}
 		}
 
-		private static DateTimeFormatStrings? bulgarian;
+		private static DateTimeFormatStrings bulgarian;
 		public static DateTimeFormatStrings Bulgarian {
 			get {
 				return bulgarian ?? (bulgarian = new DateTimeFormatStrings {
@@ -175,10 +175,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Преди {0} месеца",
 					YearAgo =    "Преди {0} година",
 					YearsAgo =   "Преди {0} години",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? catalan;
+		private static DateTimeFormatStrings catalan;
 		public static DateTimeFormatStrings Catalan {
 			get {
 				return catalan ?? (catalan = new DateTimeFormatStrings {
@@ -194,14 +194,14 @@ namespace TimeAgo {
 					MonthsAgo =  "Fa {0} mesos",
 					YearAgo =    "Fa {0} any",
 					YearsAgo =   "Fa {0} anys",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? chinese;
+		private static DateTimeFormatStrings simplifiedChinese;
         [VerifiedByNativeSpeaker]
-		public static DateTimeFormatStrings Chinese {
+		public static DateTimeFormatStrings SimplifiedChinese {
 			get {
-				return chinese ?? (chinese = new DateTimeFormatStrings {
+				return simplifiedChinese ?? (simplifiedChinese = new DateTimeFormatStrings {
 					SecondAgo =  "{0} 秒前",
 					SecondsAgo = "{0} 秒前",
 					MinuteAgo =  "{0} 分钟前",
@@ -214,10 +214,33 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} 个月前",
 					YearAgo =    "{0} 年前",
 					YearsAgo =   "{0} 年前",
-				}).GetValueOrDefault();
+				});
 			}
-		}
-		private static DateTimeFormatStrings? croatian;
+        }
+        private static DateTimeFormatStrings traditionalChinese;
+        [VerifiedByNativeSpeaker]
+        public static DateTimeFormatStrings TraditionalChinese
+        {
+            get
+            {
+                return traditionalChinese ?? (traditionalChinese = new DateTimeFormatStrings
+                {
+                    SecondAgo = "{0} 秒前",
+                    SecondsAgo = "{0} 秒前",
+                    MinuteAgo = "{0} 分鐘前",
+                    MinutesAgo = "{0} 分鐘前",
+                    HourAgo = "{0} 小時前",
+                    HoursAgo = "{0} 小時前",
+                    DayAgo = "{0} 天前",
+                    DaysAgo = "{0} 天前",
+                    MonthAgo = "{0} 個月前",
+                    MonthsAgo = "{0} 個月前",
+                    YearAgo = "{0} 年前",
+                    YearsAgo = "{0} 年前",
+                });
+            }
+        }
+        private static DateTimeFormatStrings croatian;
 		public static DateTimeFormatStrings Croatian {
 			get {
 				return croatian ?? (croatian = new DateTimeFormatStrings {
@@ -233,10 +256,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Prije {0} mjeseci",
 					YearAgo =    "Prije {0} godina",
 					YearsAgo =   "Prije {0} godina",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? czech;
+		private static DateTimeFormatStrings czech;
 		public static DateTimeFormatStrings Czech {
 			get {
 				return czech ?? (czech = new DateTimeFormatStrings {
@@ -252,10 +275,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Před {0} měsíci",
 					YearAgo =    "Před {0} rokem",
 					YearsAgo =   "Před {0} lety",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? danish;
+		private static DateTimeFormatStrings danish;
 		public static DateTimeFormatStrings Danish {
 			get {
 				return danish ?? (danish = new DateTimeFormatStrings {
@@ -271,10 +294,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} måneder siden",
 					YearAgo =    "{0} år siden",
 					YearsAgo =   "{0} år siden",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? dutch;
+		private static DateTimeFormatStrings dutch;
 		public static DateTimeFormatStrings Dutch {
 			get {
 				return dutch ?? (dutch = new DateTimeFormatStrings {
@@ -290,10 +313,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} maanden geleden",
 					YearAgo =    "{0} jaar geleden",
 					YearsAgo =   "{0} jaar geleden",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? english;
+		private static DateTimeFormatStrings english;
         [VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings English {
 			get {
@@ -310,10 +333,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} months ago",
 					YearAgo =    "{0} year ago",
 					YearsAgo =   "{0} years ago",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? estonian;
+		private static DateTimeFormatStrings estonian;
 		public static DateTimeFormatStrings Estonian {
 			get {
 				return estonian ?? (estonian = new DateTimeFormatStrings {
@@ -329,10 +352,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} kuud tagasi",
 					YearAgo =    "{0} aasta tagasi",
 					YearsAgo =   "{0} aastat tagasi",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? filipino;
+		private static DateTimeFormatStrings filipino;
 		public static DateTimeFormatStrings Filipino {
 			get {
 				return filipino ?? (filipino = new DateTimeFormatStrings {
@@ -348,10 +371,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} buwan na nakalipas",
 					YearAgo =    "{0} taon ang nakalipas",
 					YearsAgo =   "{0} taon ang nakalipas",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? finnish;
+		private static DateTimeFormatStrings finnish;
 		public static DateTimeFormatStrings Finnish {
 			get {
 				return finnish ?? (finnish = new DateTimeFormatStrings {
@@ -367,10 +390,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} kuukautta sitten",
 					YearAgo =    "{0} vuosi sitten",
 					YearsAgo =   "{0} vuotta sitten",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? french;
+		private static DateTimeFormatStrings french;
         [VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings French {
 			get {
@@ -387,10 +410,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Il ya {0} mois",
 					YearAgo =    "Il ya {0} an",
 					YearsAgo =   "Il ya {0} ans",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? galician;
+		private static DateTimeFormatStrings galician;
 		public static DateTimeFormatStrings Galician {
 			get {
 				return galician ?? (galician = new DateTimeFormatStrings {
@@ -406,10 +429,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} meses atrás",
 					YearAgo =    "{0} ano atrás",
 					YearsAgo =   "{0} anos",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? georgian;
+		private static DateTimeFormatStrings georgian;
 		public static DateTimeFormatStrings Georgian {
 			get {
 				return georgian ?? (georgian = new DateTimeFormatStrings {
@@ -425,10 +448,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} თვის წინ",
 					YearAgo =    "{0} წლის წინ",
 					YearsAgo =   "{0} წლის წინ",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? german;
+		private static DateTimeFormatStrings german;
 		public static DateTimeFormatStrings German {
 			get {
 				return german ?? (german = new DateTimeFormatStrings {
@@ -444,10 +467,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Vor {0} Monaten",
 					YearAgo =    "Vor {0} Jahr",
 					YearsAgo =   "Vor {0} Jahren",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? greek;
+		private static DateTimeFormatStrings greek;
 		public static DateTimeFormatStrings Greek {
 			get {
 				return greek ?? (greek = new DateTimeFormatStrings {
@@ -463,10 +486,10 @@ namespace TimeAgo {
 					MonthsAgo =  "πριν από {0} μήνες",
 					YearAgo =    "{0} χρόνο πριν",
 					YearsAgo =   "πριν από {0} χρόνια",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? gujarati;
+		private static DateTimeFormatStrings gujarati;
 		public static DateTimeFormatStrings Gujarati {
 			get {
 				return gujarati ?? (gujarati = new DateTimeFormatStrings {
@@ -482,10 +505,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} મહિના પહેલા",
 					YearAgo =    "{0} વર્ષ પહેલાં",
 					YearsAgo =   "{0} વર્ષ પહેલાં",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? hebrew;
+		private static DateTimeFormatStrings hebrew;
 		public static DateTimeFormatStrings Hebrew {
 			get {
 				return hebrew ?? (hebrew = new DateTimeFormatStrings {
@@ -501,10 +524,10 @@ namespace TimeAgo {
 					MonthsAgo =  "לפני {0} חודשים",
 					YearAgo =    "{0} לפני שנה",
 					YearsAgo =   "לפני {0} שנים",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? hindi;
+		private static DateTimeFormatStrings hindi;
 		public static DateTimeFormatStrings Hindi {
 			get {
 				return hindi ?? (hindi = new DateTimeFormatStrings {
@@ -520,10 +543,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} महीने पहले",
 					YearAgo =    "{0} वर्ष पहले",
 					YearsAgo =   "{0} साल पहले",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? hungarian;
+		private static DateTimeFormatStrings hungarian;
         [VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings Hungarian {
 			get {
@@ -540,10 +563,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} hónappal ezelőtt",
 					YearAgo =    "{0} évvel ezelőtt",
 					YearsAgo =   "{0} évvel ezelőtt",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? icelandic;
+		private static DateTimeFormatStrings icelandic;
 		public static DateTimeFormatStrings Icelandic {
 			get {
 				return icelandic ?? (icelandic = new DateTimeFormatStrings {
@@ -559,10 +582,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} mánuðum síðan",
 					YearAgo =    "{0} ári",
 					YearsAgo =   "{0} árum síðan",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? igbo;
+		private static DateTimeFormatStrings igbo;
 		public static DateTimeFormatStrings Igbo {
 			get {
 				return igbo ?? (igbo = new DateTimeFormatStrings {
@@ -578,10 +601,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} ọnwa gara aga",
 					YearAgo =    "{0} afọ gara aga",
 					YearsAgo =   "{0} afọ gara aga",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? indonesian;
+		private static DateTimeFormatStrings indonesian;
 		public static DateTimeFormatStrings Indonesian {
 			get {
 				return indonesian ?? (indonesian = new DateTimeFormatStrings {
@@ -597,10 +620,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} bulan lalu",
 					YearAgo =    "{0} tahun lalu",
 					YearsAgo =   "{0} tahun yang lalu",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? irish;
+		private static DateTimeFormatStrings irish;
 		public static DateTimeFormatStrings Irish {
 			get {
 				return irish ?? (irish = new DateTimeFormatStrings {
@@ -616,10 +639,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} mí ó shin",
 					YearAgo =    "{0} bhliain ó shin",
 					YearsAgo =   "{0} bliana ó shin",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? italian;
+		private static DateTimeFormatStrings italian;
 		public static DateTimeFormatStrings Italian {
 			get {
 				return italian ?? (italian = new DateTimeFormatStrings {
@@ -635,10 +658,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} mesi fa",
 					YearAgo =    "{0} anno fa",
 					YearsAgo =   "{0} anni fa",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? japanese;
+		private static DateTimeFormatStrings japanese;
 		public static DateTimeFormatStrings Japanese {
 			get {
 				return japanese ?? (japanese = new DateTimeFormatStrings {
@@ -654,10 +677,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} ヶ月前",
 					YearAgo =    "{0} 年前",
 					YearsAgo =   "{0} 年前",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? kannada;
+		private static DateTimeFormatStrings kannada;
 		public static DateTimeFormatStrings Kannada {
 			get {
 				return kannada ?? (kannada = new DateTimeFormatStrings {
@@ -673,10 +696,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} ತಿಂಗಳ ಹಿಂದೆ",
 					YearAgo =    "{0} ವರ್ಷದ ಹಿಂದೆ",
 					YearsAgo =   "{0} ವರ್ಷಗಳ ಹಿಂದೆ",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? kazakh;
+		private static DateTimeFormatStrings kazakh;
 		public static DateTimeFormatStrings Kazakh {
 			get {
 				return kazakh ?? (kazakh = new DateTimeFormatStrings {
@@ -692,10 +715,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} ай бұрын",
 					YearAgo =    "{0} жыл бұрын",
 					YearsAgo =   "{0} жыл бұрын",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? khmer;
+		private static DateTimeFormatStrings khmer;
 		public static DateTimeFormatStrings Khmer {
 			get {
 				return khmer ?? (khmer = new DateTimeFormatStrings {
@@ -711,10 +734,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} ខែកន្លងទៅ",
 					YearAgo =    "{0} ឆ្នាំមុន",
 					YearsAgo =   "{0} ឆ្នាំកន្លងមក",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? korean;
+		private static DateTimeFormatStrings korean;
 		public static DateTimeFormatStrings Korean {
 			get {
 				return korean ?? (korean = new DateTimeFormatStrings {
@@ -730,10 +753,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} 개월 전",
 					YearAgo =    "{0} 년 전",
 					YearsAgo =   "{0} 년 전",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? lao;
+		private static DateTimeFormatStrings lao;
 		public static DateTimeFormatStrings Lao {
 			get {
 				return lao ?? (lao = new DateTimeFormatStrings {
@@ -749,10 +772,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} ເດືອນທີ່ຜ່ານມາ",
 					YearAgo =    "{0} ປີກ່ອນຫນ້ານີ້",
 					YearsAgo =   "{0} ປີກ່ອນຫນ້ານີ້",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? latvian;
+		private static DateTimeFormatStrings latvian;
 		public static DateTimeFormatStrings Latvian {
 			get {
 				return latvian ?? (latvian = new DateTimeFormatStrings {
@@ -768,10 +791,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Pirms {0} mēnešiem",
 					YearAgo =    "Pirms {0} gads",
 					YearsAgo =   "Pirms {0} gadiem",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? lithuanian;
+		private static DateTimeFormatStrings lithuanian;
 		public static DateTimeFormatStrings Lithuanian {
 			get {
 				return lithuanian ?? (lithuanian = new DateTimeFormatStrings {
@@ -787,10 +810,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} mėnesiai prieš",
 					YearAgo =    "Prieš {0} metus",
 					YearsAgo =   "Prieš {0} metų",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? macedonian;
+		private static DateTimeFormatStrings macedonian;
 		public static DateTimeFormatStrings Macedonian {
 			get {
 				return macedonian ?? (macedonian = new DateTimeFormatStrings {
@@ -806,10 +829,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Пред {0} месеци",
 					YearAgo =    "Пред {0} година",
 					YearsAgo =   "Пред {0} години",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? malagasy;
+		private static DateTimeFormatStrings malagasy;
 		public static DateTimeFormatStrings Malagasy {
 			get {
 				return malagasy ?? (malagasy = new DateTimeFormatStrings {
@@ -825,10 +848,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} volana lasa izay",
 					YearAgo =    "{0} taona lasa izay",
 					YearsAgo =   "{0} taona lasa izay",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? malayalam;
+		private static DateTimeFormatStrings malayalam;
 		public static DateTimeFormatStrings Malayalam {
 			get {
 				return malayalam ?? (malayalam = new DateTimeFormatStrings {
@@ -844,10 +867,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} മാസം മുമ്പ്",
 					YearAgo =    "{0} വർഷം മുമ്പ്",
 					YearsAgo =   "{0} വർഷങ്ങൾക്ക് മുൻപ്",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? maltese;
+		private static DateTimeFormatStrings maltese;
 		public static DateTimeFormatStrings Maltese {
 			get {
 				return maltese ?? (maltese = new DateTimeFormatStrings {
@@ -863,10 +886,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} xhur ilu",
 					YearAgo =    "{0} sena ilu",
 					YearsAgo =   "{0} snin ilu",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? maori;
+		private static DateTimeFormatStrings maori;
 		public static DateTimeFormatStrings Maori {
 			get {
 				return maori ?? (maori = new DateTimeFormatStrings {
@@ -882,10 +905,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} marama ki muri",
 					YearAgo =    "{0} te tau i mua",
 					YearsAgo =   "{0} tau ki muri",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? marathi;
+		private static DateTimeFormatStrings marathi;
 		public static DateTimeFormatStrings Marathi {
 			get {
 				return marathi ?? (marathi = new DateTimeFormatStrings {
@@ -901,10 +924,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} महिने पूर्वी",
 					YearAgo =    "{0} वर्षा पूर्वी",
 					YearsAgo =   "{0} वर्षे पूर्वी",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? mongolian;
+		private static DateTimeFormatStrings mongolian;
 		public static DateTimeFormatStrings Mongolian {
 			get {
 				return mongolian ?? (mongolian = new DateTimeFormatStrings {
@@ -920,10 +943,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} сар өмнө",
 					YearAgo =    "{0} жил өмнө",
 					YearsAgo =   "{0} жилийн өмнө",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? nepali;
+		private static DateTimeFormatStrings nepali;
 		public static DateTimeFormatStrings Nepali {
 			get {
 				return nepali ?? (nepali = new DateTimeFormatStrings {
@@ -939,10 +962,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} महिना अघि",
 					YearAgo =    "{0} वर्ष अघि",
 					YearsAgo =   "{0} वर्षसम्म अघि",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? norwegian;
+		private static DateTimeFormatStrings norwegian;
 		public static DateTimeFormatStrings Norwegian {
 			get {
 				return norwegian ?? (norwegian = new DateTimeFormatStrings {
@@ -958,10 +981,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} måneder siden",
 					YearAgo =    "{0} år siden",
 					YearsAgo =   "{0} år siden",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? persian;
+		private static DateTimeFormatStrings persian;
 		public static DateTimeFormatStrings Persian {
 			get {
 				return persian ?? (persian = new DateTimeFormatStrings {
@@ -977,10 +1000,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} ماه پیش",
 					YearAgo =    "{0} سال پیش",
 					YearsAgo =   "{0} سال پیش",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? polish;
+		private static DateTimeFormatStrings polish;
 		public static DateTimeFormatStrings Polish {
 			get {
 				return polish ?? (polish = new DateTimeFormatStrings {
@@ -996,10 +1019,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} miesięcy temu",
 					YearAgo =    "{0} rok temu",
 					YearsAgo =   "{0} lat temu",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? portuguese;
+		private static DateTimeFormatStrings portuguese;
 		public static DateTimeFormatStrings Portuguese {
 			get {
 				return portuguese ?? (portuguese = new DateTimeFormatStrings {
@@ -1015,10 +1038,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} meses atrás",
 					YearAgo =    "{0} ano atrás",
 					YearsAgo =   "{0} anos atrás",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		//private static DateTimeFormatStrings? punjabi;
+		//private static DateTimeFormatStrings punjabi;
 		//public static DateTimeFormatStrings Punjabi {
 		//	get {
 		//		return punjabi ?? (punjabi = new DateTimeFormatStrings {
@@ -1034,10 +1057,10 @@ namespace TimeAgo {
 		//			MonthsAgo =  "{0}",
 		//			YearAgo =    "{0}",
 		//			YearsAgo =   "{0}",
-		//		}).GetValueOrDefault();
+		//		});
 		//	}
 		//}
-		private static DateTimeFormatStrings? romanian;
+		private static DateTimeFormatStrings romanian;
 		public static DateTimeFormatStrings Romanian {
 			get {
 				return romanian ?? (romanian = new DateTimeFormatStrings {
@@ -1053,10 +1076,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} luni în urmă",
 					YearAgo =    "{0} an în urmă",
 					YearsAgo =   "{0} ani în urmă",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? russian;
+		private static DateTimeFormatStrings russian;
 		public static DateTimeFormatStrings Russian {
 			get {
 				return russian ?? (russian = new DateTimeFormatStrings {
@@ -1072,10 +1095,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} месяцев назад",
 					YearAgo =    "{0} года назад",
 					YearsAgo =   "{0} года назад",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? serbian;
+		private static DateTimeFormatStrings serbian;
 		[VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings Serbian {
 			get {
@@ -1092,10 +1115,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Пре {0} месеци",
 					YearAgo =    "Пре годинy",
 					YearsAgo =   "Пре {0} година",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? slovak;
+		private static DateTimeFormatStrings slovak;
 		public static DateTimeFormatStrings Slovak {
 			get {
 				return slovak ?? (slovak = new DateTimeFormatStrings {
@@ -1111,10 +1134,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Pred {0} mesiacmi",
 					YearAgo =    "Pred {0} rokom",
 					YearsAgo =   "Pred {0} rokmi",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? slovenian;
+		private static DateTimeFormatStrings slovenian;
 		public static DateTimeFormatStrings Slovenian {
 			get {
 				return slovenian ?? (slovenian = new DateTimeFormatStrings {
@@ -1130,10 +1153,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Pred {0} meseci",
 					YearAgo =    "{0} leto nazaj",
 					YearsAgo =   "{0} let nazaj",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? spanish;
+		private static DateTimeFormatStrings spanish;
         [VerifiedByNativeSpeaker]
 		public static DateTimeFormatStrings Spanish {
 			get {
@@ -1150,10 +1173,10 @@ namespace TimeAgo {
 					MonthsAgo =  "Hace {0} meses",
 					YearAgo =    "Hace {0} año",
 					YearsAgo =   "Hace {0} años",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? swedish;
+		private static DateTimeFormatStrings swedish;
 		public static DateTimeFormatStrings Swedish {
 			get {
 				return swedish ?? (swedish = new DateTimeFormatStrings {
@@ -1169,10 +1192,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} månader sedan",
 					YearAgo =    "{0} år sedan",
 					YearsAgo =   "{0} år sedan",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? tajik;
+		private static DateTimeFormatStrings tajik;
 		public static DateTimeFormatStrings Tajik {
 			get {
 				return tajik ?? (tajik = new DateTimeFormatStrings {
@@ -1188,10 +1211,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} моҳи қабл",
 					YearAgo =    "{0} сол қабл",
 					YearsAgo =   "{0} сол қабл",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? tamil;
+		private static DateTimeFormatStrings tamil;
 		public static DateTimeFormatStrings Tamil {
 			get {
 				return tamil ?? (tamil = new DateTimeFormatStrings {
@@ -1207,10 +1230,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} மாதங்கள் முன்பு",
 					YearAgo =    "{0} வருடம் முன்பு",
 					YearsAgo =   "{0} ஆண்டுகளுக்கு முன்பு",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? telugu;
+		private static DateTimeFormatStrings telugu;
 		public static DateTimeFormatStrings Telugu {
 			get {
 				return telugu ?? (telugu = new DateTimeFormatStrings {
@@ -1226,10 +1249,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} నెలల క్రితం",
 					YearAgo =    "{0} సంవత్సరం క్రితం",
 					YearsAgo =   "{0} సంవత్సరాల క్రితం",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? thai;
+		private static DateTimeFormatStrings thai;
 		public static DateTimeFormatStrings Thai {
 			get {
 				return thai ?? (thai = new DateTimeFormatStrings {
@@ -1245,10 +1268,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} เดือนที่ที่ผ่านมา",
 					YearAgo =    "{0} ปีที่ผ่านมา",
 					YearsAgo =   "{0} ปีที่ผ่านมา",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? turkish;
+		private static DateTimeFormatStrings turkish;
 		public static DateTimeFormatStrings Turkish {
 			get {
 				return turkish ?? (turkish = new DateTimeFormatStrings {
@@ -1264,10 +1287,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} aylar önce",
 					YearAgo =    "{0} yıl önce",
 					YearsAgo =   "{0} yıl önce",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? ukrainian;
+		private static DateTimeFormatStrings ukrainian;
 		public static DateTimeFormatStrings Ukrainian {
 			get {
 				return ukrainian ?? (ukrainian = new DateTimeFormatStrings {
@@ -1283,10 +1306,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} місяців тому",
 					YearAgo =    "{0} рiк назад",
 					YearsAgo =   "{0} років тому",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? urdu;
+		private static DateTimeFormatStrings urdu;
 		public static DateTimeFormatStrings Urdu {
 			get {
 				return urdu ?? (urdu = new DateTimeFormatStrings {
@@ -1302,10 +1325,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} ماہ پہلے",
 					YearAgo =    "{0} سال پہلے",
 					YearsAgo =   "{0} سال پہلے",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? uzbek;
+		private static DateTimeFormatStrings uzbek;
 		public static DateTimeFormatStrings Uzbek {
 			get {
 				return uzbek ?? (uzbek = new DateTimeFormatStrings {
@@ -1321,10 +1344,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} oy oldin",
 					YearAgo =    "{0} yil oldin",
 					YearsAgo =   "{0} yil oldin",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? vietnamese;
+		private static DateTimeFormatStrings vietnamese;
 		public static DateTimeFormatStrings Vietnamese {
 			get {
 				return vietnamese ?? (vietnamese = new DateTimeFormatStrings {
@@ -1340,10 +1363,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} vài tháng trước",
 					YearAgo =    "{0} năm trước",
 					YearsAgo =   "{0} năm trước",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? welsh;
+		private static DateTimeFormatStrings welsh;
 		public static DateTimeFormatStrings Welsh {
 			get {
 				return welsh ?? (welsh = new DateTimeFormatStrings {
@@ -1359,10 +1382,10 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} mis yn ôl",
 					YearAgo =    "{0} flwyddyn yn ôl",
 					YearsAgo =   "{0} mlynedd yn ôl",
-				}).GetValueOrDefault();
+				});
 			}
 		}
-		private static DateTimeFormatStrings? yoruba;
+		private static DateTimeFormatStrings yoruba;
 		public static DateTimeFormatStrings Yoruba {
 			get {
 				return yoruba ?? (yoruba = new DateTimeFormatStrings {
@@ -1378,7 +1401,7 @@ namespace TimeAgo {
 					MonthsAgo =  "{0} osu seyin",
 					YearAgo =    "{0} odun kan seyin",
 					YearsAgo =   "{0} odun seyin",
-				}).GetValueOrDefault();
+				});
 			}
 		}
 	}
