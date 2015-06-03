@@ -200,7 +200,7 @@ namespace TimeAgo
                 case "yo": // Yoruba
                     return LanguageFormatStrings.Yoruba;
                 default:
-                    throw new NotSupportedException("The provided CultureInfo is not supported.");
+                    return LanguageFormatStrings.English;
             }
         }
     }
