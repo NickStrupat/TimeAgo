@@ -1,3 +1,6 @@
+# ABANDONED: This project is no longer being supported by myself.
+I recommend using a better project: https://github.com/Humanizr/Humanizer
+
 # TimeAgo
 Get a string showing how long ago a DateTime was, for example '4 minutes ago' in many languages
 
