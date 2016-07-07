@@ -307,7 +307,7 @@ namespace TimeAgo {
 					MinutesAgo = "{0} minuten geleden",
 					HourAgo =    "{0} uur geleden",
 					HoursAgo =   "{0} uur geleden",
-					DayAgo =     "{0} uur geleden",
+					DayAgo =     "{0} dag geleden",
 					DaysAgo =    "{0} dagen geleden",
 					MonthAgo =   "{0} maand geleden",
 					MonthsAgo =  "{0} maanden geleden",
