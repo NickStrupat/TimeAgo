@@ -186,7 +186,7 @@ namespace TimeAgo {
 					SecondsAgo = "Fa {0} segons",
 					MinuteAgo =  "Fa {0} minut",
 					MinutesAgo = "Fa {0} minuts",
-					HourAgo =    "Fa {0} dia",
+					HourAgo =    "Fa {0} hora",
 					HoursAgo =   "Fa {0} hores",
 					DayAgo =     "Fa {0} dia",
 					DaysAgo =    "Fa {0} dies",
